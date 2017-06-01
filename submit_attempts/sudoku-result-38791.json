@@ -1,0 +1,28 @@
+{
+    "tests": [
+        {
+            "description": "the solve method produces a valid solution.",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_pvwixoar/utils.py\", line 142, in func_wrapper\n    return func(self)\n  File \"run3.py\", line 93, in test_solve\n    values = solution.solve(grid.rstrip())\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 186, in solve\n    values = search(values)\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 175, in search\n    attempt = search(new_values)\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 175, in search\n    attempt = search(new_values)\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 175, in search\n    attempt = search(new_values)\n  [Previous line repeated 6 more times]\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 166, in search\n    values = reduce_puzzle(values)\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 151, in reduce_puzzle\n    values = naked_twins(values)\n  File \"/home/vmuser_pvwixoar/workspace/solution.py\", line 137, in naked_twins\n    values[peer] = values[peer].replace(values[nt[0]][1], '')\nIndexError: string index out of range\n",
+            "message": null,
+            "advice": "Try your code on the following example:\n9.1....8.8.5.7..4.2.4....6...7......5..............83.3..6......9................\n",
+            "result": "E",
+            "rubric_item_id": "5530"
+        },
+        {
+            "description": "the naked_twins method applies the 'naked twins' heuristic.",
+            "traceback": "",
+            "message": null,
+            "advice": null,
+            "result": ".",
+            "rubric_item_id": "5531"
+        },
+        {
+            "description": "the README has been modified.",
+            "traceback": "",
+            "message": null,
+            "advice": null,
+            "result": ".",
+            "rubric_item_id": null
+        }
+    ]
+}
