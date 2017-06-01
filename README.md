@@ -3,11 +3,14 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We can check for Naked Twins in each unit within the Sudoku. To accomplish this we just have to check all the boxes within a unit that meet 2 conditions:
+    1. The lenght of the value of the box is 2
+    2. The value is equal to the value of any other box within the same unit
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The diagonal Sudoku is the same problem as the Sudoku but with an additional constrain in the diagonals. To reflect that constrain within our solution, we just need to add the boxes that are part of the 2 big diagonals into 2 additional units into our "all_units" list. 
+This way, when applying the different techinques and strategies learnt in this Unit, this 2 new units contianing the boxes of the diagonals will be considered as units when checking the constrains.  
 
 ### Install
 
